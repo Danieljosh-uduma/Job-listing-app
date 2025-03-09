@@ -1,0 +1,115 @@
+.job {
+    width: 306px;
+    /* height: 160px; */
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gray-10);
+
+    .company {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        margin-left: 5px;
+
+        .company-name {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: var(--gray-10);
+            font-size: 0.875rem;
+        }
+        .show {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+
+            span {
+                font-size: 0.75rem;
+            }
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+    .position {
+        margin-left: 5px;
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 0.75rem;
+            color: var(--gray-10);
+            margin-bottom: 20px;
+        }
+    }
+    .category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 0.75rem;
+
+        div {
+            display: flex;
+            gap: 7px;
+            font-weight: bold;
+            color: var(--green-600);
+
+            span {
+                padding: 7px 14px;
+                border-radius: 50px;
+            }
+            .easy {
+                border: 1px solid var(--green-600);
+            }
+            .multiple {
+                background-color: var(--green-10);
+            }
+        }
+    }
+    .description {
+        h4 {
+            margin-bottom: 10px;
+            color: var(--purple);
+        }
+        p {
+            font-size: 0.9rem;
+            line-height: 1.3rem;
+            margin-bottom: 20px;
+        }
+    }
+    .requirement {
+        h4 {
+            margin-bottom: 10px;
+            color: var(--purple);
+        }
+        .requirement-list {
+            font-size: 0.9rem;
+            line-height: 1.3rem;
+            position: relative;
+
+            li {
+                margin-bottom: 10px;
+            }
+            li::before {
+                content: '- ';
+                color: var(--purple);
+            }
+        }
+    }
+}
+.active-job {
+    border: 1px solid var(--gray-10);
+    background-color: var(--green-2);
+    border-radius: 4px;
+}
+.show-img>img {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Inter;
+    src: url(/src/assets/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(/src/assets/Inter/static/Inter_18pt-Regular.ttf);
+}
+:root {
+    --green-100: #00E676;
+    --green-600: #0C9653;
+    --green-10: #dbfdec;
+    --green-2: #f5faf8;
+    --gray: #8C8F8E;
+    --gray-10: #B8BDBB;
+    --purple: #7E3FF2;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Inter;
+    transition: all 0.3s ease-in-out;
+}
