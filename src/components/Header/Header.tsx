@@ -8,12 +8,12 @@ export default function Header() {
                 <ul className='navlist'>
                     <li>
                         <a href="" title="notification">
-                            <img src="/public/images/bell.svg" alt="notification bell" />
+                            <img src="/images/bell.svg" alt="notification bell" />
                         </a>
                     </li>
                     <li>
                         <a href="" title="profile" className='profile'>
-                            <img src="/src/assets/images/user-circle.svg" alt="user profile" />
+                            <img src="/images/user-circle.svg" alt="user profile" />
                         </a>
                     </li>
                     <li>
