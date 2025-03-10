@@ -1,9 +1,15 @@
+.job-list {
+    width: 100%;
+    margin: 70px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 .job {
     width: 306px;
-    /* height: 160px; */
+    height: 160px;
     padding: 10px;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 80px;
     border-bottom: 1px solid var(--gray-10);
 
     .company {
@@ -61,6 +67,7 @@
             gap: 7px;
             font-weight: bold;
             color: var(--green-600);
+            cursor: pointer;
 
             span {
                 padding: 7px 14px;
@@ -104,12 +111,71 @@
             }
         }
     }
+    .salary {
+        h3 {
+            color: var(--green-600);
+            margin: 20px 10px 10px;
+        }
+    }
+}
+.job:hover {
+    background-color: var(--green-2);
 }
 .active-job {
     border: 1px solid var(--gray-10);
     background-color: var(--green-2);
     border-radius: 4px;
+    height: auto;
 }
 .show-img>img {
     transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 1054px) and (max-width: 1370px) {
+    .job-list {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 70px 50px 20px;
+
+        .job {
+            margin-left: 0;
+        }
+    }
+    
+}
+@media only screen and (min-width: 760px) and (max-width: 1054px) {
+    .job-list {
+        grid-template-columns: repeat(2, 1fr);
+        .job {
+            width: 356px;
+        }
+    }
+}
+
+@media only screen and (min-width: 735px) and (max-width: 845px) {
+    .job-list {
+        grid-template-columns: repeat(2, 1fr);
+        .job {
+            width: 306px;
+        }
+    }
+}
+@media only screen and (max-width: 735px) {
+    .job-list {
+        grid-template-columns: 1fr;
+        margin: 70px 0 20px;
+        .job {
+            width: 376px;
+            place-self: center;
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .job-list {
+        grid-template-columns: 1fr;
+        margin: 70px 0 20px;
+        .job {
+            width: 306px;
+            place-self: center;
+        }
+    }
 }
