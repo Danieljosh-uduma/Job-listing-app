@@ -8,7 +8,7 @@ export default function Header() {
                 <ul className='navlist'>
                     <li>
                         <a href="" title="notification">
-                            <img src="/src/assets/images/bell.svg" alt="notification bell" />
+                            <img src="/images/bell.svg" alt="notification bell" />
                         </a>
                     </li>
                     <li>
