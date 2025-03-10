@@ -59,12 +59,12 @@ function Job(props: IJob) {
             <div className={show? 'job active-job': 'job'}>
                 <div className="company">
                     <div className="company-name">
-                        <img src="/src/assets/images/meta.png" alt="Meta company" />
+                        <img src="/images/meta.png" alt="Meta company" />
                         <span>{props.company_name}</span>
                     </div>
                     <div className={show ? 'show show-img': 'show'} onClick={handleShow}>
                         <span>show {show ? 'less' : 'more'} </span>
-                        <img className='show' src="/src/assets/images/arrow-up.txt" alt="favourite" />
+                        <img className='show' src="/images/arrow-up.txt" alt="favourite" />
                     </div>
                 </div>
                 <div className="position">
