@@ -165,6 +165,7 @@
         margin: 70px 0 20px;
         .job {
             width: 376px;
+            margin-left: 0;
             place-self: center;
         }
     }
@@ -176,6 +177,7 @@
         .job {
             width: 306px;
             place-self: center;
+            margin-left: 0;
         }
     }
 }
